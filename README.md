@@ -14,7 +14,7 @@ Install this as a feed!
 
 > cd $TOPDIR
 > 
-> echo 'src-git openvswitch git://github.com/schuza/openvswitch.git' >> feeds.conf
+> echo 'src-git openvswitch git://github.com/shinya-arao/openvswitch.git' >> feeds.conf
 >
 > ./scripts/feeds update openvswitch
 >
