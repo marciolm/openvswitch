@@ -3,7 +3,7 @@ openvswitch
 
 UPDATE: Works now with OpenWrt "Barrier Breaker" (Bleeding Edge)
 
-Open vSwitch 1.9.0 (OvS) package for OpenWrt
+Open vSwitch 2.0.0 (OvS) package for OpenWrt
 
 Installation
 ------------
