@@ -1,34 +1,23 @@
-openvswitch
-===========
+Installation in OpenWrt
 
-UPDATE: Works now with OpenWrt "Barrier Breaker" (Bleeding Edge)
+$ cd $TOPDIR
 
-Open vSwitch 2.0.0 (OvS) package for OpenWrt
+$ echo 'src-git openvswitch git://github.com/shinya-arao/openvswitch.git' >> feeds.conf
 
-Installation
-------------
+$ ./scripts/feeds update openvswitch
 
-Install this as a feed!
+$ ./scripts/feeds install -a -p openvswitch
 
-### Installation in OpenWrt
+$ make menuconfig
 
-> cd $TOPDIR
-> 
-> echo 'src-git openvswitch git://github.com/shinya-arao/openvswitch.git' >> feeds.conf
->
-> ./scripts/feeds update openvswitch
->
-> ./scripts/feeds install -a -p openvswitch
-> 
-> make menuconfig
->
-> select Network -> openvswitch-switch, openvswitch-brcompat and openvswitch-controller
->
-> echo '# CONFIG_KERNEL_BRIDGE is not set' >> .config
+CONFIG_PACKAGE_kmod-crypto-crc32c=y
 
+CONFIG_PACKAGE_kmod-lib-crc32c=y
 
+CONFIG_PACKAGE_kmod-openvswitch=m
 
-Development
------------
+CONFIG_PACKAGE_openvswitch-common=m
 
-Please fork on githup and send pull requests.
+CONFIG_PACKAGE_openvswitch-controller=m
+
+CONFIG_PACKAGE_openvswitch-switch=m
