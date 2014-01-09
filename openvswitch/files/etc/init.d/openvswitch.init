@@ -15,7 +15,7 @@ start() {
 	$DEBUG start-stop-daemon -q -S -x  /usr/sbin/ovsdb-server -- \
 		--remote=punix:/var/run/db.sock \
 		--pidfile=/var/run/ovsdb-server.pid --detach
-		#--remote=db:Open_vSwitch,manager_options \
+		--remote=db:Open_vSwitch,Open_vSwitch,manager_options \
 	sleep 1
 
 	$DEBUG ovs-vsctl --no-wait init
