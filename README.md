@@ -21,3 +21,4 @@ CONFIG_PACKAGE_openvswitch-common=m
 CONFIG_PACKAGE_openvswitch-controller=m
 
 CONFIG_PACKAGE_openvswitch-switch=m
+
