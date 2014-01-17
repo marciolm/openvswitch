@@ -2,7 +2,7 @@ Installation in OpenWrt
 =======================
 
     $ cd $TOPDIR
-    $ echo 'src-git openvswitch git://github.com/shinya-arao/openvswitch.git' >> feeds.conf
+    $ echo 'src-git openvswitch git://github.com/alexanderplatz1999/openvswitch.git' >> feeds.conf
     $ ./scripts/feeds update openvswitch
     $ ./scripts/feeds install -a -p openvswitch
     $ make menuconfig
