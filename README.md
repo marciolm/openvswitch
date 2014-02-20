@@ -1,5 +1,10 @@
+Note: patch is already avaiable at http://patchwork.openwrt.org/patch/4343/
+
+So I don't need to use this feed any longer...
+
+
 Installation in OpenWrt
-=======================
+
 
     $ cd $TOPDIR
     $ echo 'src-git openvswitch git://github.com/alexanderplatz1999/openvswitch.git' >> feeds.conf
